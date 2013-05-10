@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1em;
 }
 
@@ -20,18 +20,45 @@ ul.indent {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #5b94bf;
 }
 
-.blogtitle {
-  font-family: 'Lobster', cursive;
-  margin: 0;
-  padding: 0;
+a {
+  color: #5b94bf;
 }
 
-.tagline {
-  margin-left: 3em;
+button, .button {
+  background-color: #5b94bf;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #4180b6; 
+}
+
+#topbar{
+  background-image: url('/images/topbar.jpg');
+}
+
+#blogtitle {
+  font-family: Zapfino;
+  font-weight: 100;
+  margin-top: 60px;
+  margin-left:0px; 
   padding: 0;
+  font-size: 2.5em;
+}
+
+#blogtitle a {
+  color: white;
+}
+
+#tagline {
+  margin-left: 2.5em;
+  padding: 0;
+  font-family: 'Shadows Into Light Two', sans-serif;
+  font-weight: 100;
+  color: #ccc;
 }
 
 a span.pikto {
@@ -55,6 +82,12 @@ a span.pikto {
   src: url("modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("modernpics-webfont.woff") format("woff"), url("modernpics-webfont.ttf") format("truetype"), url("modernpics-webfont.svg#ModernPictogramsNormal") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+    font-family: Zapfino;
+    src: url("Zapfino.ttf");
+    font-weight:400;
 }
 
 .tagindex {
@@ -84,7 +117,7 @@ a span.pikto {
 .tagindex ul.tagindex > li span.pikto {
   display: block;
   width: 100%;
-  color: #538fbd;
+  color: #5b94bf;
   font-family: "ModernPictogramsNormal";
   font-size: 1.5em;
   line-height: 1.5em;
@@ -93,7 +126,7 @@ a span.pikto {
 }
 
 .tagindex ul.tagindex > li span.pikto a {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   padding-left: 0.5em;
   font-size: 1.3em;
 }
@@ -108,7 +141,7 @@ a span.pikto {
 .taglist ul.taglist > li span.pikto {
   display: block;
   width: 100%;
-  color: #2BA6CB;
+  color: #5b94bf;
   font-family: "ModernPictogramsNormal";
   font-size: 1.2em;
   text-align: left;
@@ -116,7 +149,8 @@ a span.pikto {
 }
 
 .taglist ul.taglist > li span.pikto a {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.4em;
   padding-left: 0.5em;
 }
 

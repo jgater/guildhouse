@@ -5,9 +5,12 @@ date: 2013-05-08 12:00
 template: about.jade
 ---
 
-## About this blog, and me
+##About me##
 
-I am the example Winter Smith. This is my super-cool (boom! boom!) weblogging site.
+Husband, sysadmin, developer, designer, model painter, gamer. I also cook - sometimes! Currently hanging out and working in the wonderful North Dorset countryside. 
 
-Powered by node.js, wintersmith, and zurb Foundation 4 - mixed together to make Winter Foundations.
+##About the blog##
+Powered by node.js, wintersmith, and zurb Foundation 4 - mixed together to make [Winter Foundations](https://github.com/jgater/winter-foundations).
+
+I needed somewhere to put photos and stuff about my projects. So here we are...
 

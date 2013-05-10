@@ -1,10 +1,10 @@
 {
   "locals": {
-    "url": "/",
-    "title": "Winter Foundations",
-    "owner": "The Winter Smith",
-    "description": "Winter is coming",
-    "index_articles": 7,
+    "url": "http://www.theguildhouse.net",
+    "title": "the Guildhouse",
+    "owner": "James Gater",
+    "description": "Code, metal and paint",
+    "index_articles": 10,
     "nav" : [
              {
                "name": "Home",

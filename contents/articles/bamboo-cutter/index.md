@@ -1,10 +1,11 @@
 ---
 title: The tale of the bamboo-cutter
 abstract: Long, long ago, there lived an old bamboo wood-cutter.
-author: wintersmith
+author: jg
 date: 2013-05-05 12:00
 template: article.jade
 status: published
+tags: example
 ---
 
 
