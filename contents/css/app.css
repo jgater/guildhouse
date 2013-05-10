@@ -1,0 +1,124 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.row {
+    max-width: 100em;
+}
+
+pre {
+  max-width: 70em;
+}
+
+ul.indent {
+  margin: 0 0 0 3em;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.blogtitle {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.tagline {
+  margin-left: 3em;
+  padding: 0;
+}
+
+a span.pikto {
+  font-family: "ModernPictogramsNormal";
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-right: 0.5em;
+}
+
+
+.date {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-style: italic;
+  color: #999;
+}
+
+@font-face {
+  font-family: 'ModernPictogramsNormal';
+  src: url("modernpics-webfont.eot");
+  src: url("modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("modernpics-webfont.woff") format("woff"), url("modernpics-webfont.ttf") format("truetype"), url("modernpics-webfont.svg#ModernPictogramsNormal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tagindex {
+  margin: 1em 0em 7em;
+}
+
+.tagindex ul.tagindex > li {
+  list-style-type: none;
+  margin: 10px 0px 10px;
+}
+
+.tagindex ul.tagindex > li > ul {
+  display: none;
+  margin-left: 44px;
+  padding-left: 24px;
+  border-left: 1px solid #e6e6e6;
+}
+
+.tagindex ul.tagindex > li > ul > li {
+  list-style-type: none;
+}
+
+.tagindex ul.tagindex > li > ul > li:last-child {
+  margin-bottom: 40px;
+}
+
+.tagindex ul.tagindex > li span.pikto {
+  display: block;
+  width: 100%;
+  color: #538fbd;
+  font-family: "ModernPictogramsNormal";
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+  text-shadow: 0px 0px 6px white;
+}
+
+.tagindex ul.tagindex > li span.pikto a {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding-left: 0.5em;
+  font-size: 1.3em;
+}
+
+.taglist ul.taglist > li  {
+  list-style-type: none;
+}
+
+.taglist ul.taglist > li span.pikto a:hover {
+}
+
+.taglist ul.taglist > li span.pikto {
+  display: block;
+  width: 100%;
+  color: #2BA6CB;
+  font-family: "ModernPictogramsNormal";
+  font-size: 1.2em;
+  text-align: left;
+  text-shadow: 0px 0px 6px white;
+}
+
+.taglist ul.taglist > li span.pikto a {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 0.5em;
+}
+
+.taglist ul.taglist > li span.pikto a:hover {
+}

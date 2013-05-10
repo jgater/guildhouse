@@ -11,7 +11,7 @@ rss(version='2.0',
     link= locals.url
     description= locals.description
     pubDate= articles[0].rfc822date
-    generator The mighty Wintersmith
+    generator Winter Foundations
     language en
     for article in articles
       - var permalink = locals.url + article.url
@@ -21,4 +21,5 @@ rss(version='2.0',
         pubDate= article.rfc822date
         guid(isPermaLink='true')= permalink
         author= article.author
-        description= article.getHtml(locals.url) // passing locals.url resolves all relative urls to absolute
+        //- passing locals.url resolves all relative urls to absolute
+        description= article.getHtml(locals.url)

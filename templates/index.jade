@@ -1,24 +1,48 @@
 extends layout
-
 block content
-  include author
-  //- underscore helps us filter and sort our articles
-  - var articles = _.chain(contents.articles._.directories).map(function(item) {
-  -   // map articles to index pages of subdirectories of 'articles'
-  -   return item.index
-  - }).compact().sortBy(function(item) { // compact removes any directories w/o an index
-  -   // sort them by date
-  -   return -item.date
-  - }).first(5).value() // and finally take the first 5
-  each article in articles
-    article.post
-      header
-        h2
-          a(href=article.url)= article.title
-        p
-          mixin author(article.metadata.author)
-      section.content!= article.intro
-      if article.hasMore
-        p.read-more
-          a(href=article.url) read more
-  a(href='archive.html')#archive Visit the archives!
+	include includes/author
+	include includes/published
+	.row
+		.large-9.columns
+
+			- var articles = _.chain(pubArticles).filter(function(item) {
+			-		if (page.title==="Index") {
+			-			return item
+			-		} else if (item.metadata.tags && item.metadata.tags.length > 0) {
+			-			var taglist = _.flatten(item.metadata.tags.split(','))
+			-			var tagexists = _.some(taglist, function(tag){return tag.trim() === page.metadata.id})
+			-			if (tagexists) { return item }	
+			-		}
+			-	}).sortBy(function(item) { 
+			-   // sort them by date
+			-			return -item.date
+			- }).first(locals.index_articles).value() // and finally take the first few only
+
+			each article in articles
+				article.post
+					.row
+						.large-9.columns
+							h2
+								a(href=article.url)= article.title
+						.large-3.columns
+							.date #{article.metadata.date}
+
+					.row
+						.large-12.columns          
+							section.content
+								!= article.intro
+								if article.hasMore
+									p
+										a(href=article.url).button.round.small read more &rarr;
+						hr
+		.large-3.columns
+			include includes/sidebar
+
+	.row
+		.large-12.columns
+			p 
+				| To see older articles, check out the 
+				a(href='/timeline/') Timeline 
+				| or 
+				a(href='/tagindex/') Tagged 
+				| posts.

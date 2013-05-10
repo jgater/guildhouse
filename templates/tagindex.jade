@@ -1,0 +1,42 @@
+extends layout
+
+block append head
+	script(type='text/javascript', src='/js/app.js')
+	script
+		$(document).ready(function() {
+			app.setupIndex();
+		}) 
+
+block prepend title
+	| #{ page.title } - 
+
+block content
+	include includes/published
+	- var taglist = []
+	- _.each(pubArticles, function(item) {
+	-     if (item.metadata.tags && item.metadata.tags.length > 0) {
+	-       _.each(item.metadata.tags.split(','), function(nesteditem, index) {
+	-         taglist.push({key:nesteditem.trim(), url:item.url, title:item.metadata.title, abstract:item.metadata.abstract})
+	-      })
+	-    }
+	- })
+
+	.row
+		.large-12.columns
+			include includes/tag
+
+			- var grouped = _.groupBy(taglist, 'key')
+			div.tagindex
+				h2 All posts with tags
+				ul.tagindex
+					- for (var group in grouped)
+						li.tag 
+							mixin tag(group)
+							ul
+								- var groupedValues = _.values(grouped[group])
+								- for (var item in groupedValues)
+									li.tagged.row
+										h4.title
+											a(href=groupedValues[item].url)= groupedValues[item].title
+										p.abstract.large-6.columns= groupedValues[item].abstract
+

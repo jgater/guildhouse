@@ -1,15 +1,21 @@
-----
-title: Hello World
-author: the-wintersmith
-date: 2012-01-31 15:00
-template: article.jade
 ---
+title: Hello World
+abstract: First Post!
+author: wintersmith
+date: 2011-12-30 17:00
+template: article.jade
+tags: example, wintersmith
+status: published
+---
+
 
 Welcome to your new wintersmith site mortal.
 
 This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
 If you want a bare bones example check out the site in `examples/basic/` in the repository root or
 use `wintersmith new <path> --template basic` when creating a new site.
+
+<span class="more"></span>
 
 Site structure:
 

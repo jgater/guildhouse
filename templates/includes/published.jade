@@ -1,0 +1,8 @@
+//- underscore helps us filter and sort our articles
+- var pubArticles = _.chain(contents.articles._.directories).map(function(item) {
+-   // map articles to index pages of subdirectories of 'articles'
+-   return item.index
+- }).compact().filter(function(item) { // compact removes any directories w/o an index
+-		// limits to only published articles	
+-   return (item.metadata.status === "published")
+- }).value()

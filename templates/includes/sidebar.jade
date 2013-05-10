@@ -1,0 +1,21 @@
+include tag
+
+- var tagList = _.chain(contents.articles._.directories).map(function(item) {
+-   return item.index
+- }).compact().filter(function(item) {
+-   return (item.metadata.status === "published" && item.metadata.tags && item.metadata.tags.length > 0)
+- }).map(function(item){ 
+-		return item.metadata.tags.split(',')
+-	}).flatten().map(function(item){
+-		return item.trim()
+-	}).union().value()
+
+div.taglist
+	h3 Post tags:
+	ul.taglist
+		li.tag
+			span.pikto p
+				a(href='/') All
+		each tagName in tagList
+			li.tag
+				mixin tag(tagName)

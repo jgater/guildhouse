@@ -1,9 +1,12 @@
 ---
 title: The tale of the bamboo-cutter
-author: Princess Kaguya
-date: 2011-05-01 12:00
+abstract: Long, long ago, there lived an old bamboo wood-cutter.
+author: wintersmith
+date: 2013-05-05 12:00
 template: article.jade
+status: published
 ---
+
 
 ![image](Taketori_Monogatari.jpg)
 

@@ -1,0 +1,34 @@
+
+extends layout
+
+block prepend title
+	| #{ page.title } - 
+
+block content
+	!= page.html
+		//- underscore helps us filter and sort our articles
+	- var archive = _.chain(contents.articles._.directories).map(function(item) {
+	-   return item.index
+	- }).compact().filter(function(item) {
+	-   return (item.metadata.status === "published")
+	- }).sortBy(function(item) {
+	-   return -item.date
+	- }).groupBy(function(item) {
+	-   return item.date.getFullYear()
+	- }).value()
+	- var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+	.row
+		.large-12.columns
+				ul
+					each year in _.chain(archive).keys().reverse().value()
+						h3.year= year
+						- var months = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
+						ul.indent
+							each articles, month in months
+								li
+									strong= month
+									each article in articles
+										br
+										a(href=article.url)= article.title
+	

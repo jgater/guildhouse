@@ -1,8 +1,11 @@
 ---
 title: A red herring
-author: baker
-date: 2011-12-26 12:20
+abstract: A fishy tale
+author: wintersmith
+date: 2012-12-26 12:20
 template: article.jade
+tags: example
+status: published
 ---
 
 A long time ago, when the world was young

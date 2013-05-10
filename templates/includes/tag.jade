@@ -1,0 +1,9 @@
+mixin tag(tagName)
+	- var tag = contents.tags[tagName + '.md']
+		if tag
+			span.pikto J
+				- var path = '/tags/' + tagName + '.html'
+				a(href=path)
+					= tag.title
+		else
+			= tagName

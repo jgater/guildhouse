@@ -1,9 +1,36 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "The Wintersmith",
-    "description": "-32°C ain't no problems!",
-    "index_articles": 3
+    "url": "/",
+    "title": "Winter Foundations",
+    "owner": "The Winter Smith",
+    "description": "Winter is coming",
+    "index_articles": 7,
+    "nav" : [
+             {
+               "name": "Home",
+               "pikto": "p",
+               "description": "Home Page",
+               "url": "/"
+              },                         
+              {
+               "name": "Timeline",
+               "pikto": "}",
+               "description": "posts ordered by date",
+               "url": "/timeline/"
+              },
+              {
+               "name": "Tag index",
+               "pikto": "J",
+               "description": "posts ordered by tag",
+               "url": "/tagindex/"
+              },
+              {
+               "name": "About",
+               "pikto": "Y",
+               "description": "About",
+               "url": "/about/"
+              }
+
+        ]  
   }
 }

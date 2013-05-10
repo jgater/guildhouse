@@ -1,9 +1,13 @@
 ---
 title: Code and stuff!
-author: The Wintersmith
-date: 2011-10-01 15:00
+abstract: Syntax highlighting
+author: wintersmith
+date: 2012-12-08 15:00
 template: article.jade
+tags: example, wintersmith
+status: published
 ---
+
 Syntax highlighting with highlight.js
 
 ### JavaScript
@@ -17,22 +21,47 @@ function factorial(n) {
 }
 ```
 
-## More samples
+<span class="more"></span>
 
+### HTML
+
+```
+<!DOCTYPE html>
+<title>Title</title>
+
+<style>body {width: 500px;}</style>
+
+<script type="application/javascript">
+  function $init() {return true;}
+</script>
+
+<body>
+  <p checked class="title" id='title'>Title</p>
+  <!-- here goes the rest of the page -->
+</body>
+```
+## More samples
 
 Taken from [wikipedia](https://en.wikipedia.org/wiki/Hello_world_program_examples).
 
-### C
+### PHP
 
-```c
-#include <stdio.h>
-
-int main(void)
-{
-  printf("Hello world\n");
-  return 0;
-}
+```php
+<?php echo 'Hello, world'; ?>
 ```
+
+### Python
+
+```python
+print("Hello World")
+```
+
+### Ruby
+
+```ruby
+puts "Hello world!"
+```
+
 
 ### C++
 
@@ -48,7 +77,7 @@ int main()
 
 ### C-sharp
 
-```csharp
+```
 class ExampleClass
 {
     static void Main()
@@ -56,16 +85,6 @@ class ExampleClass
         System.Console.WriteLine("Hello, world!");
     }
 }
-```
-
-### COBOL
-
-```cobol
-       IDENTIFICATION DIVISION.
-       PROGRAM-ID. HELLO-WORLD.
-       PROCEDURE DIVISION.
-           DISPLAY 'Hello, world'.
-           STOP RUN.
 ```
 
 ### Erlang
@@ -96,35 +115,6 @@ public class HelloWorld {
 }
 ```
 
-### ObjectiveC
-
-```objc
-#import <stdio.h>
-
-int main(void)
-{
-    printf("Hello, World!\n");
-    return 0;
-}
-```
-
-### PHP
-
-```php
-<?php echo 'Hello, world'; ?>
-```
-
-### Python
-
-```python
-print("Hello World")
-```
-
-### Ruby
-
-```ruby
-puts "Hello world!"
-```
 
 
 
