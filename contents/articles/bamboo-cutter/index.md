@@ -4,7 +4,7 @@ abstract: Long, long ago, there lived an old bamboo wood-cutter.
 author: jg
 date: 2013-05-05 12:00
 template: article.jade
-status: published
+status: 
 tags: example
 ---
 
