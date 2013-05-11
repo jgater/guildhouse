@@ -43,17 +43,26 @@ button:hover, button:focus, .button:hover, .button:focus {
     background-color: #4180b6; 
 }
 
-#topbar{
-  background-image: url('/images/topbar.jpg');
+
+.top-bar, .top-bar-section, #top-bar {
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+  background-image: url('/images/logo.jpg');
   background-repeat: no-repeat;
-  min-height: 150px;
+  min-height: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 a span.pikto {
   font-family: "ModernPictogramsNormal";
-  font-size: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.3em;
   font-weight: 100;
-  padding-right: 0.5em;
+  padding: 0 0.5em 0 0;
 }
 
 

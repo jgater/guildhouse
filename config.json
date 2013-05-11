@@ -25,6 +25,18 @@
                "url": "/tagindex/"
               },
               {
+               "name": "Avalon",
+               "pikto": "w",
+               "description": "Avalon forum",
+               "url": "/avalon/"
+              },
+              {
+               "name": "Wiki",
+               "pikto": "4",
+               "description": "Avalon wiki",
+               "url": "/ewiki/"
+              },
+              {
                "name": "About",
                "pikto": "Y",
                "description": "About",

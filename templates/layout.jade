@@ -17,17 +17,31 @@ html(lang='en')
 			script(src='/js/vendor/custom.modernizr.js')
 			script(src='/js/vendor/jquery.js')
 
+
+
 	body
 		block header
-			.row#topbar
+			.row#top-bar
+					nav.top-bar
+						ul.title-area
+								// Title Area 
+								li.name
+
+								// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
+								li.toggle-topbar.menu-icon
+									a(href='#')
+										span Menu
+							section.top-bar-section
+								// Right Nav Section 
+								ul.right#top-bar-buttons
+									each item in locals.nav
+										li.divider.hide-for-small
+										li
+											a(href=item.url)
+												span.pikto= item.pikto 
+												span= item.name
+			.row#logo
 				.large-12.columns
-					.span.right
-						ul.button-group
-							each item in locals.nav
-								li
-									a.button.small(href=item.url)
-										span.pikto= item.pikto 
-										span= item.name
 
 					
 
@@ -51,3 +65,9 @@ html(lang='en')
 										a(href=item.url)
 											span.pikto= item.pikto 
 											span= item.name
+
+			script(src='/js/foundation.min.js')
+			script
+				$(function(){
+					$(document).foundation();
+				})
