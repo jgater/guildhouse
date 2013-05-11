@@ -53,9 +53,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #logo{
-  background-image: url('/images/logo.jpg');
+  background-image: url('/images/logo2.jpg');
   background-repeat: no-repeat;
-  min-height: 100px;
+  min-height: 125px;
   margin: 0;
   padding: 0;
 }
