@@ -55,11 +55,15 @@ html(lang='en')
 					hr
 					.row
 						.large-6.columns
+							p.right
+								a(href="feed.xml")
+									span.pikto ^
+									span.txt RSS Feed
 							p &copy; #{ new Date().getFullYear() }
 								a(href="/about/")  #{ locals.owner }
 
 						.large-6.columns
-							ul.inline-list.right
+							ul.small-block-grid-3.right
 								each item in locals.nav
 									li
 										a(href=item.url)

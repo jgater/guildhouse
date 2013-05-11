@@ -21,8 +21,11 @@ pre {
   max-width: 70em;
 }
 
+ul {
+    margin-left: 2.5em;
+}
+
 ul.indent {
-  margin: 0 0 0 3em;
   list-style-type: none;
 }
 

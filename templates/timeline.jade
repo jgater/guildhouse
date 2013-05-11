@@ -5,13 +5,10 @@ block prepend title
 	| #{ page.title } - 
 
 block content
+	include includes/published
 	!= page.html
 		//- underscore helps us filter and sort our articles
-	- var archive = _.chain(contents.articles._.directories).map(function(item) {
-	-   return item.index
-	- }).compact().filter(function(item) {
-	-   return (item.metadata.status === "published")
-	- }).sortBy(function(item) {
+	- var archive = _.chain(pubArticles).sortBy(function(item) {
 	-   return -item.date
 	- }).groupBy(function(item) {
 	-   return item.date.getFullYear()
