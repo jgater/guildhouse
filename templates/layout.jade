@@ -21,27 +21,27 @@ html(lang='en')
 
 	body
 		block header
-			.row#top-bar
-					nav.top-bar
-						ul.title-area
-								// Title Area 
-								li.name
+			.row
+				nav.top-bar
+					ul.title-area
+							// Title Area 
+							li.name
 
-								// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
-								li.toggle-topbar.menu-icon
-									a(href='#')
-										span Menu
-							section.top-bar-section
-								// Right Nav Section 
-								ul.right#top-bar-buttons
-									each item in locals.nav
-										li.divider.hide-for-small
-										li
-											a(href=item.url)
-												span.pikto= item.pikto 
-												span= item.name
-			.row#logo
-				.large-12.columns
+							// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
+							li.toggle-topbar.menu-icon
+								a(href='#')
+									span Menu
+						section.top-bar-section
+							// Right Nav Section 
+							ul.right#top-bar-buttons
+								each item in locals.nav
+									li.divider.hide-for-small
+									li
+										a(href=item.url)
+											span.pikto= item.pikto 
+											span= item.name
+			.row
+				.large-12.columns#logo
 
 					
 
