@@ -1,9 +1,8 @@
 include tag
+include published
 
-- var tagList = _.chain(contents.articles._.directories).map(function(item) {
--   return item.index
-- }).compact().filter(function(item) {
--   return (item.metadata.status === "published" && item.metadata.tags && item.metadata.tags.length > 0)
+- var tagList = _.chain(pubArticles).filter(function(item) {
+-   return (item.metadata.tags && item.metadata.tags.length > 0)
 - }).map(function(item){ 
 -		return item.metadata.tags.split(',')
 -	}).flatten().map(function(item){

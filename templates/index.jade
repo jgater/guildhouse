@@ -3,7 +3,7 @@ block content
 	include includes/author
 	include includes/published
 	.row
-		.large-9.columns
+		.large-10.columns
 
 			- var articles = _.chain(pubArticles).filter(function(item) {
 			-		if (page.title==="Index") {
@@ -25,17 +25,29 @@ block content
 							h2
 								a(href=article.url)= article.title
 						.large-3.columns
-							.date #{article.metadata.date}
+							.date.right #{article.metadata.date}
 
 					.row
-						.large-12.columns          
-							section.content
-								!= article.intro
-								if article.hasMore
-									p
-										a(href=article.url).button.round.small read more &rarr;
+						if article.metadata.image
+							.large-3.columns
+								img(src=article.url+article.metadata.image)
+							.large-9.columns          
+								section.content
+									!= article.intro
+									if article.hasMore
+										p
+											a(href=article.url).button.round.small read more &rarr;
+						else
+							.large-12.columns          
+								section.content
+									!= article.intro
+									if article.hasMore
+										p
+											a(href=article.url).button.round.small read more &rarr;
+
+
 						hr
-		.large-3.columns
+		.large-2.columns
 			include includes/sidebar
 
 	.row

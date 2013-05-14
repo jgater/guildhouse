@@ -6,6 +6,7 @@ date: 2013-05-10 23:00
 template: article.jade
 status: published
 tags: meta
+image: code.jpg
 ---
 
 Hello world. After many years, getting back into the blogging game. Now I have something to post. 
