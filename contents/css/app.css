@@ -29,6 +29,7 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #5b94bf;
+  font-weight: normal;
 }
 
 a {
