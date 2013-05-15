@@ -11,8 +11,25 @@
 			})
 		};
 
+		var replaceDates = function() {
+			$("div.date").each(function(){
+				var isodate = $(this).text();
+				var day = moment.utc(isodate);
+				if (day.isValid()) {
+					day.local();
+					$(this).text( day.format("ddd Do MMMM YYYY, hA") );
+				}	
+
+			});
+
+		};
+
+
 		return {
-			setupIndex: setupIndex
+			setupIndex: setupIndex,
+			replaceDates: replaceDates
 		}
 	})();
+
+
 })(window, document);

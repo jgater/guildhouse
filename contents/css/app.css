@@ -117,28 +117,34 @@ a span.pikto {
   font-size: 1.3em;
 }
 
-.taglist ul.taglist > li  {
+.taglist {
+  border-left: 1px solid #e6e6e6;
+  padding-left: 1em;
+}
+
+.taglist ul {
+  margin-left: 0
+}
+
+.taglist ul > li  {
   list-style-type: none;
 }
 
-.taglist ul.taglist > li span.pikto a:hover {
-}
-
-.taglist ul.taglist > li span.pikto {
+.taglist ul > li span.pikto {
   display: block;
   width: 100%;
   color: #5b94bf;
   font-family: "ModernPictogramsNormal";
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: left;
   text-shadow: 0px 0px 6px white;
 }
 
-.taglist ul.taglist > li span.pikto a {
+.taglist ul > li span.pikto a {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
   padding-left: 0.5em;
 }
 
-.taglist ul.taglist > li span.pikto a:hover {
+.taglist ul > li span.pikto a:hover {
 }

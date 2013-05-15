@@ -16,7 +16,11 @@ html(lang='en')
 			script(src='http://yandex.st/highlightjs/7.3/highlight.min.js')
 			script(src='/js/vendor/custom.modernizr.js')
 			script(src='/js/vendor/jquery.js')
-
+			script(src='/js/foundation.min.js')
+			script
+				$(function(){
+					$(document).foundation();
+				})
 
 
 	body
@@ -70,8 +74,5 @@ html(lang='en')
 											span.pikto= item.pikto 
 											span= item.name
 
-			script(src='/js/foundation.min.js')
-			script
-				$(function(){
-					$(document).foundation();
-				})
+
+
