@@ -34,15 +34,15 @@ html(lang='en')
 						li.toggle-topbar.menu-icon
 							a(href='#')
 								span Menu
-						section.top-bar-section
-							// Right Nav Section 
-							ul.right#top-bar-buttons
-								each item in locals.nav
-									li.divider.hide-for-small
-									li
-										a(href=item.url)
-											span.pikto= item.pikto 
-											span= item.name
+					section.top-bar-section
+						// Right Nav Section 
+						ul.right#top-bar-buttons
+							each item in locals.nav
+								li.divider.hide-for-small
+								li
+									a(href=item.url)
+										span.pikto= item.pikto 
+										span= item.name
 			.row
 				a#large-logo.large-12.columns.hide-for-small(href=locals.url)
 				a#small-logo.large-12.columns.hide-for-medium-up(href=locals.url)

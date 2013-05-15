@@ -43,7 +43,8 @@ block content
 					.row
 						if article.metadata.image
 							.large-3.columns
-								img(src=article.url+article.metadata.image)
+								a(href=article.url)
+									img(src=article.url+article.metadata.image, alt=article.metadata.abstract)
 							.large-9.columns          
 								section.content
 									!= article.intro

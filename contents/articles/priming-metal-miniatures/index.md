@@ -6,7 +6,7 @@ date: 2013-05-15 23:30
 template: article.jade
 status: published
 tags: metalmini, paint, 40k
-image: IMAG0023.jpg
+image: IMAG0035.jpg
 ---
 
 
@@ -50,7 +50,6 @@ So - onto the example preparation!
 	<div class="large-3 columns"><blockquote>Since I have a pin-vice handy, I drilled out most of the gun barrels. It's a small touch, but I like the look. Totally optional. Harder on the las-guns, as they have smaller barrels, so they only got a couple of turns of the bit.</blockquote></div>
 </div>
 <br>
-
 <p>With metal figures - always, always use a primer or undercoat. With plastics, you can get away with a basecoat as a primary colour, but metals are less 'grippy' of the paint, so without a proper primer you are much more likely to see paint flake off later in exposed areas. If you don't have a dedicated spray primer/undercoat, a thinnish coat of white, black or grey basecoat style acrylic paint will do at a pinch. It keys the surface for further layers, and gives you a solid colour to work from. Primer colour is personal preference - I tend to use black for darker figures, white or light grey for ones I want a brighter finish on.</p>
 
 <p>Short break between rain clouds, so I nipped outside to spray primer. Car body primer works as a cheap option; I have some dedicated primer sprays, went with grey as painting light green over black is a right pain in the danglies. </p>
