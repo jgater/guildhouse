@@ -19,9 +19,7 @@
 					day.local();
 					$(this).text( day.format("ddd Do MMMM YYYY, hA") );
 				}	
-
 			});
-
 		};
 
 

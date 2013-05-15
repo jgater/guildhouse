@@ -1,25 +1,37 @@
 extends layout
 
 block prepend title
-  | #{ page.title } - 
+	| #{ page.title } - 
 
+block append head
+	script(src='/js/moment.min.js')
+	script(src='/js/app.js')
+	script
+		$(document).ready(function() {
+			app.replaceDates();
+		}) 
 
 block content
-  include includes/author
-  .row
-    .large-12.columns
-      p
-      a.back(href='/').button.round.small &larr; back to index
-      br
-      br
-      h2= page.title
-    
-      article.single.post
-        section.content
-          != page.html
-        br
-        p
-          | [contact author: 
-          mixin author(page.metadata.author) ]
-        p
-          a.back(href='/').button.round.small &larr; back to index
+	include includes/author
+	.row
+		.large-12.columns
+			p
+			a.back(href='/').button.round.small &larr; back to index
+			br
+			br
+			.row
+				.small-6.large-9.columns
+					h2= page.title
+				.small-6.large-3.columns
+					.date.right= page.rfc822date
+					
+		
+			article.single.post
+				section.content
+					!= page.html
+				br
+				p
+					| [contact author: 
+					mixin author(page.metadata.author) ]
+				p
+					a.back(href='/').button.round.small &larr; back to index

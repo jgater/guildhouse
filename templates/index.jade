@@ -5,7 +5,6 @@ block append head
 	script(src='/js/app.js')
 	script
 		$(document).ready(function() {
-			app.replaceDates();
 		}) 
 
 block content
@@ -26,15 +25,20 @@ block content
 			-   // sort them by date
 			-			return -item.date
 			- }).first(locals.index_articles).value() // and finally take the first few only
+			- var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
 
 			each article in articles
 				article.post
 					.row
-						.small-6.large-9.columns
+						.small-6.columns
 							h2
 								a(href=article.url)= article.title
-						.small-6.large-3.columns
-							.date.right #{article.rfc822date}
+						.small-6.columns
+							.button-bar.right
+								ul.button-group.round.datebar
+									li.tiny.button.disabled.alert= article.date.getDate()
+									li.tiny.button.disabled.secondary= month[article.date.getMonth()]
+									li.tiny.button.disabled.secondary= article.date.getFullYear()
 
 					.row
 						if article.metadata.image
