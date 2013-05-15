@@ -25,9 +25,6 @@ ul {
     margin-left: 2.5em;
 }
 
-ul.indent {
-  list-style-type: none;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -96,7 +93,6 @@ a span.pikto {
 }
 
 .tagindex ul.tagindex > li {
-  list-style-type: none;
   margin: 10px 0px 10px;
 }
 
@@ -139,10 +135,6 @@ a span.pikto {
 
 .taglist ul {
   margin-left: 0
-}
-
-.taglist ul > li  {
-  list-style-type: none;
 }
 
 .taglist ul > li span.pikto {

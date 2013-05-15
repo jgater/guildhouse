@@ -28,7 +28,7 @@ block content
 			- var grouped = _.groupBy(taglist, 'key')
 			div.tagindex
 				h2 All posts with tags
-				ul.tagindex
+				ul.tagindex.no-bullet
 					- for (var group in grouped)
 						li.tag 
 							mixin tag(group)
