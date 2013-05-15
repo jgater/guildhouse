@@ -28,13 +28,12 @@ html(lang='en')
 			.row
 				nav.top-bar
 					ul.title-area
-							// Title Area 
-							li.name
-
-							// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
-							li.toggle-topbar.menu-icon
-								a(href='#')
-									span Menu
+						// Title Area 
+						li.name test
+						// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
+						li.toggle-topbar.menu-icon
+							a(href='#')
+								span Menu
 						section.top-bar-section
 							// Right Nav Section 
 							ul.right#top-bar-buttons
@@ -45,7 +44,8 @@ html(lang='en')
 											span.pikto= item.pikto 
 											span= item.name
 			.row
-				.large-12.columns#logo
+				#large-logo.large-12.columns.hide-for-small
+				#small-logo.large-12.columns.hide-for-medium-up
 
 					
 
