@@ -2,7 +2,7 @@
 title: Hello world!
 abstract: First post
 author: jg
-date: 2013-05-10 23:00
+date: 2013-05-10 22:00
 template: article.jade
 status: published
 tags: meta
