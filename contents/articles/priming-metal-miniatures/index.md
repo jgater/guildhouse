@@ -1,6 +1,6 @@
 ---
 title: Priming metal miniatures
-abstract: Preparing and priming metal 28mm soldiers for painting.
+abstract: Preparing and priming metal 28mm warhammer 40K soldiers for painting.
 author: jg
 date: 2013-05-15 23:30
 template: article.jade
