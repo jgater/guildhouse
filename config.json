@@ -19,7 +19,7 @@
                "url": "/timeline/"
               },
               {
-               "name": "Tag index",
+               "name": "Tags",
                "pikto": "J",
                "description": "posts ordered by tag",
                "url": "/tagindex/"

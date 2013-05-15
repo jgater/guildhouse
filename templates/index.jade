@@ -34,7 +34,7 @@ block content
 							h2
 								a(href=article.url)= article.title
 						.large-3.columns
-							.date.right #{article.metadata.date}
+							.date.right #{article.rfc822date}
 
 					.row
 						if article.metadata.image
