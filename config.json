@@ -8,37 +8,37 @@
     "nav" : [
              {
                "name": "Home",
-               "pikto": "p",
+               "icon": "home",
                "description": "Home Page",
                "url": "/"
               },                         
               {
                "name": "Timeline",
-               "pikto": "}",
+               "icon": "clock",
                "description": "posts ordered by date",
                "url": "/timeline/"
               },
               {
                "name": "Tags",
-               "pikto": "J",
+               "icon": "map_pin_stroke",
                "description": "posts ordered by tag",
                "url": "/tagindex/"
               },
               {
                "name": "Avalon",
-               "pikto": "w",
+               "icon": "chat_alt_stroke",
                "description": "Avalon forum",
                "url": "/avalon/"
               },
               {
                "name": "Wiki",
-               "pikto": "4",
+               "icon": "list",
                "description": "Avalon wiki",
                "url": "/ewiki/"
               },
               {
                "name": "About",
-               "pikto": "Y",
+               "icon": "info",
                "description": "About",
                "url": "/about/"
               }
