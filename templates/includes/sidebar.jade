@@ -13,8 +13,9 @@ div.taglist
 	h5 Show posts tagged:
 	ul.no-bullet
 		li.tag
-			span.pikto p
-				a(href='/') All
+			a(href="/")
+				span.iconic.home
+				span All
 		each tagName in tagList
 			li.tag
 				mixin tag(tagName)

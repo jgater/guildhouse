@@ -1,9 +1,9 @@
 mixin tag(tagName)
 	- var tag = contents.tags[tagName + '.md']
+	- var path = '/tags/' + tagName + '.html'
 		if tag
-			span.pikto J
-				- var path = '/tags/' + tagName + '.html'
-				a(href=path)
-					= tag.title
+			a(href=path)
+				span.iconic.paperclip
+				span= tag.title
 		else
 			= tagName

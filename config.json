@@ -20,7 +20,7 @@
               },
               {
                "name": "Tags",
-               "icon": "map_pin_stroke",
+               "icon": "paperclip",
                "description": "posts ordered by tag",
                "url": "/tagindex/"
               },
