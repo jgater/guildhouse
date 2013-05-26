@@ -13,10 +13,9 @@
 
 		var replaceDates = function() {
 			$("div.date").each(function(){
-				var isodate = $(this).text();
-				var day = moment.utc(isodate);
+				var date = $(this).text();
+				var day = moment(date);
 				if (day.isValid()) {
-					day.local();
 					$(this).text( day.format("ddd Do MMMM YYYY, hA") );
 				}	
 			});
