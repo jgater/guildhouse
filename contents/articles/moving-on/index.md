@@ -19,5 +19,5 @@ So I've moved this blog and the legacy stuff across to the new ubuntu 13.04 virt
 Definitely going to write a guide on how I did it, just got to finalise a few bits first. And do it again, taking notes and screenshots this time! It's pretty straightforward, especially if you have prior linux and/or virtualization experience. Admittedly, those are kinda my day job, so your mileage may vary.
 
 So hopefully there won't be too much disruption as I move the domain as well as the web-space, but just in case something goes belly up while dealing with the yanks in charge, the site is also available at
-[theguildhouse.co.uk](http://www.theguildhouse.co.uk) as well as the usual [theguildhouse.net](http://www.theguildhouse.net)
+[theguildhouse.co.uk](http://theguildhouse.co.uk) as well as the usual [theguildhouse.net](http://theguildhouse.net)
 
