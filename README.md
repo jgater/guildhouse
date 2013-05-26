@@ -18,9 +18,9 @@ A version of the theme and code used, without all the articles etc, suitable for
 
 Files under contents/articles, contents/images and contents/articleimages are available under the [Attribution-ShareAlike 2.0 UK: England & Wales](http://creativecommons.org/licenses/by-sa/2.0/uk/) creative commons licence, unless such works contain trademarks etc of others, where they are used under Fair Use/Fair Dealing.
 
-All other original content available under the MIT licence included below, bar the Iconic Font, which is under the SIL open font licence.
+All other original content available under the MIT licence included here.
 
-## MIT Licence
+### MIT Licence
 
 Copyright (C) 2013 James Gater
 
