@@ -1,6 +1,6 @@
 ---
 title: Brin Milo part 1
-abstract: Painting Gaunt's Ghost, Milo Brin
+abstract: Painting Gaunt's Ghost, Brin Milo
 author: jg
 date: 2013-05-25 23:00
 template: article.jade
