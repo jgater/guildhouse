@@ -1,5 +1,5 @@
 ---
-title: Milo Brin part 1
+title: Brin Milo part 1
 abstract: Painting Gaunt's Ghost, Milo Brin
 author: jg
 date: 2013-05-25 23:00
