@@ -8,7 +8,7 @@ status: published
 tags: meta, code
 ---
 
-<img style="float: right" src="/articleimages/Amazon_Web_Services.png" />
+<img class="right" src="/articles/moving-on/Amazon_Web_Services.png" />
 
 Given my heftily-priced-for-not-much-space hosting provider bill is due at the end of the month for another year, I decided to check out Amazon Web Services free hosting.
 
