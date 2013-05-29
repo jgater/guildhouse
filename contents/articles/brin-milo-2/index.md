@@ -5,7 +5,7 @@ author: jg
 date: 2013-05-29 11:00
 template: article.jade
 status: published
-tags: metalmini, paint, 40k
+tags: metalmini, paint, 40k, milo
 image: IMAG0194.jpg
 ---
 My friends and I have taken on a joint challenge for May - each of five of us is painting a Games Workshop 28mm miniature, a Gaunt's Ghost of Dan Abnett's books. My randomly assigned figure was Brin Milo.
@@ -16,7 +16,7 @@ My friends and I have taken on a joint challenge for May - each of five of us is
 
 I've relocated to another room - something about being able to use the dining table for dinner with guests, I think. Nice afternoon sun to paint with though! So, battle dress first.
 
-<ul class="small-block-grid-1 large-block-grid-2">
+<ul class="small-block-grid-1 large-block-grid-3">
 	<li>![](IMAG0182.jpg)
 		<blockquote>Painted in Reaper MSP dusky skin shadow, then washed in Army Painter dark tone (black) wash. Next, roughly wet-blended with dusky skin shadow, dusky skin, and dusky skin highlight in successive stages.</blockquote>
 	</li>
@@ -27,7 +27,7 @@ I've relocated to another room - something about being able to use the dining ta
 
 What a difference taking photos by artificial light the next morning makes! Be good to get my lightbox working for consistent shots. Still, you can see the progress.
 
-<ul class="small-block-grid-1 large-block-grid-2">
+<ul class="small-block-grid-1 large-block-grid-3">
 	<li>![](IMAG0194.jpg)
 		<blockquote>The green arm wraps, belt and rifle sling are done with vallejo model colour german field grey, highlighted with a mix of german field grey and model colour olive green, with more olive green added for the 2nd stage hilight. The arm wraps were also washed with AP dark tone - I think it may be a bit much on the left arm, will have to fix that. The belt buckle and knife handle are just AP gun metal washed with AP dark tone to get a darker metal effect. I will probably bring up the buckle with some brass/copper metallic, not sure yet.</blockquote>
 	</li>
