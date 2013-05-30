@@ -1,5 +1,5 @@
 ---
 id: milo
-title: Milo
+title: Brin Milo
 template: index.jade
 ---
