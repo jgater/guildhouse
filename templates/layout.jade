@@ -16,14 +16,12 @@ html(lang='en')
 			link(rel='stylesheet', href='http://yandex.st/highlightjs/7.3/styles/tomorrow-night-eighties.min.css')
 			script(src='http://yandex.st/highlightjs/7.3/highlight.min.js')
 			script(src='/js/vendor/custom.modernizr.js')
-			script(src='/js/vendor/jquery.js')
+			script(src='http://code.jquery.com/jquery-1.10.0.min.js')
 			script(src='/js/foundation.min.js')
 			script
 				$(function(){
 					$(document).foundation();
 				})
-
-
 	body
 		block header
 			.row
@@ -31,7 +29,6 @@ html(lang='en')
 					ul.title-area
 						// Title Area 
 						li.name test
-						// Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
 						li.toggle-topbar.menu-icon
 							a(href='#')
 								span Menu
