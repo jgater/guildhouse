@@ -13,10 +13,10 @@
                "url": "/"
               },                         
               {
-               "name": "Timeline",
+               "name": "Archive",
                "icon": "clock",
                "description": "posts ordered by date",
-               "url": "/timeline/"
+               "url": "/archive/"
               },
               {
                "name": "Tags",
