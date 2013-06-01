@@ -1,0 +1,72 @@
+extends layout
+
+block append head
+
+block content
+	include includes/author
+	include includes/published
+	.row
+		.large-10.columns
+
+			- var articles = _.chain(pubArticles).filter(function(item) {
+			-		if (page.title==="Index") {
+			-			return item
+			-		} else if (item.metadata.tags && item.metadata.tags.length > 0) {
+			-			var taglist = _.flatten(item.metadata.tags.split(','))
+			-			var tagexists = _.some(taglist, function(tag){return tag.trim() === page.metadata.id})
+			-			if (tagexists) { return item }	
+			-		}
+			-	}).sortBy(function(item) { 
+			-   // sort them by date
+			-			return -item.date
+			- }).first(locals.index_articles).value() // and finally take the first few only
+			- var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+
+			each article in articles
+				article.post
+					.row
+						.small-6.columns
+							h2
+								a(href=article.url)= article.title
+						.small-6.columns
+							.button-bar.right
+								ul.button-group.round.datebar
+									li.tiny.button.disabled.day= article.date.getDate()
+									li.tiny.button.disabled.month= month[article.date.getMonth()]
+									li.tiny.button.disabled.secondary= article.date.getFullYear()
+
+					.row
+						if article.metadata.image
+							.large-3.columns
+								a(href=article.url)
+									img(src=article.url+article.metadata.image, alt=article.metadata.abstract)
+							.large-9.columns          
+								section.content
+									!= article.intro
+									if article.hasMore
+										p
+											a(href=article.url).button.round.small read more &rarr;
+						else
+							.large-12.columns          
+								section.content
+									!= article.intro
+									if article.hasMore
+										p
+											a(href=article.url).button.round.small read more &rarr;
+
+					.row
+						.large-12.columns
+							hr
+
+					
+		.large-2.columns
+			include includes/sidebar
+
+	.row
+		.large-12.columns
+			p 
+				| To see older articles, check out 
+				a(href='/archive/') Archived 
+				| or 
+				a(href='/tagindex/') Tagged 
+				| posts.

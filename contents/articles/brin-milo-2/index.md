@@ -6,7 +6,6 @@ date: 2013-05-29 11:00
 template: article.jade
 status: published
 tags: metalmini, paint, 40k, milo
-image: IMAG0194.jpg
 ---
 My friends and I have taken on a joint challenge for May - each of five of us is painting a Games Workshop 28mm miniature, a Gaunt's Ghost of Dan Abnett's books. My randomly assigned figure was Brin Milo.
 

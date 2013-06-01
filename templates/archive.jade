@@ -25,7 +25,9 @@ block content
 							each articles, month in months
 								li
 									strong= month
-									each article in articles
-										br
-										a(href=article.url)= article.title
+										ul.no-bullet
+											each article in articles
+												li
+													a(href=article.url)= article.title
+													p= article.metadata.abstract
 	
