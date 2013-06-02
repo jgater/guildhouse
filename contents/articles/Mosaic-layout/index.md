@@ -2,7 +2,7 @@
 title: Mosaic Layout
 abstract: deploying Isotope for a fluid articles mosaic style grid
 author: jg
-date: 2013-06-02 21:00
+date: 2013-06-02 23:50
 template: article.jade
 status: published
 tags: meta, code, isotope
@@ -158,6 +158,6 @@ I chose to apply my sizes to the individual article boxes instead, and that mean
 
 To cover how the tag filtering works means first going into how I'm doing the whole tag filtering with the wintersmith system in the first place, as it's not part of the stock template but done with some fairly intense underscore sorting and filtering to create the static page in the first place.
 
-That's another article in its own right, so I shall return to describe how the two systems interact another day.
+That's another article in its own right, so I shall return to describe how the two systems interact another day. In the meantime, [Isotope](http://isotope.metafizzy.co/) has a whole bunch more features and modes than I'm using here, and is free and open source for non-commercial use. I can definitely recommend it if you need a layout a little more flexible than the standard grid of boxes.
 
 
