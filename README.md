@@ -1,6 +1,6 @@
-# TheGuildhouse.net
+# TheGuildhouse.net / theguildhouse.co.uk
 
-This is the source code for  [The Guildhouse](http://theguildhouse.net/), my personal blog.
+This is the source code for  [The Guildhouse](http://theguildhouse.co.uk/), my personal blog.
 
 It is built with 
 
