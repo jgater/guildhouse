@@ -5,7 +5,7 @@ author: jg
 date: 2013-05-25 23:00
 template: article.jade
 status: published
-tags: metalmini, paint, 40k, milo
+tags: metalmini, paint, milo
 image: milo.jpg
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: code
 title: Code
-template: staticindex.jade
+template: chrono.jade
 ---

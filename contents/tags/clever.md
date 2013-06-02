@@ -1,5 +1,4 @@
 ---
-id: clever
 title: Clever
-template: staticindex.jade
+template: chrono.jade
 ---

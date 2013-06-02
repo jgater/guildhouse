@@ -1,5 +1,4 @@
 ---
-id: milo
 title: Brin Milo
-template: staticindex.jade
+template: chrono.jade
 ---

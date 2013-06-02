@@ -1,5 +1,4 @@
 ---
-id: paint
 title: Paint
-template: staticindex.jade
+template: chrono.jade
 ---

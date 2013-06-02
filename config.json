@@ -1,48 +1,54 @@
 {
-  "locals": {
-    "url": "http://theguildhouse.net",
-    "title": "the Guildhouse",
-    "owner": "James Gater",
-    "description": "Code, metal and paint",
-    "index_articles": 10,
-    "nav" : [
-             {
-               "name": "Home",
-               "icon": "home",
-               "description": "Home Page",
-               "url": "/"
-              },                         
-              {
-               "name": "Archive",
-               "icon": "clock",
-               "description": "posts ordered by date",
-               "url": "/archive/"
-              },
-              {
-               "name": "Tags",
-               "icon": "paperclip",
-               "description": "posts ordered by tag",
-               "url": "/tagindex/"
-              },
-              {
-               "name": "Avalon",
-               "icon": "chat_alt_stroke",
-               "description": "Avalon forum",
-               "url": "/avalon/"
-              },
-              {
-               "name": "Wiki",
-               "icon": "list",
-               "description": "Avalon wiki",
-               "url": "/ewiki/"
-              },
-              {
-               "name": "About",
-               "icon": "info",
-               "description": "About",
-               "url": "/about/"
-              }
+	"locals": {
+		"url": "http://theguildhouse.net",
+		"title": "the Guildhouse",
+		"owner": "James Gater",
+		"description": "Code, metal and paint",
+		"index_articles": 30,
+		"nav" : [
+						 {
+								"name": "Home",
+								"icon": "home",
+								"description": "Home Page",
+								"url": "/"
+							},
+							{
+								"name": "Chronological",
+								"icon": "clock",
+								"description": "Current post summaries",
+								"url": "/chrono/"
+							},                            
+							{
+								"name": "Archive",
+								"icon": "box",
+								"description": "all posts ordered by date",
+								"url": "/archive/"
+							},
+							{
+								"name": "Tags",
+								"icon": "paperclip",
+								"description": "posts ordered by tag",
+								"url": "/tagindex/"
+							},
+							{
+								"name": "Avalon",
+								"icon": "chat_alt_stroke",
+								"description": "Avalon forum",
+								"url": "/avalon/"
+							},
+							{
+								"name": "Wiki",
+								"icon": "list",
+								"description": "Avalon wiki",
+								"url": "/ewiki/"
+							},
+							{
+								"name": "About",
+								"icon": "info",
+								"description": "About",
+								"url": "/about/"
+							}
 
-        ]  
-  }
+				]  
+	}
 }

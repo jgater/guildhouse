@@ -1,5 +1,4 @@
 ---
-id: meta
 title: Meta
-template: staticindex.jade
+template: chrono.jade
 ---

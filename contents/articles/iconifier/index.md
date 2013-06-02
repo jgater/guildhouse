@@ -4,7 +4,7 @@ author: jg
 date: 2013-06-01 17:00
 template: article.jade
 status: published
-tags: code
+tags: code, meta
 image: apple-touch-icon-144x144.png
 ---
 

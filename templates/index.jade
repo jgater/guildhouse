@@ -9,8 +9,9 @@ block content
 
 	mixin tag(tagName)
 		- var tag = contents.tags[tagName + '.md']
+			span | 
 			if tag
-				a(href='#', data-filter='[data-tags~="'+tagName+'"]')
+				a(href='', data-filter='[data-tags~="'+tagName+'"]')
 					span= tag.title
 			else
 				span= tagName
@@ -29,13 +30,16 @@ block content
 	-	}).union().value()
 
 	.row
-		.large-12.columns
-			ul#filters.no-bullet
-				li 
-					a(href='#', data-filter='*') show all
+		div.tagnav
+			dl.sub-nav#filters
+				dt Show Recent posts:
+				dd.active
+					a(href='', data-filter='*') 
+						span All
 				each tagName in tagList	
-					li
+					dd
 						mixin tag(tagName)
+
 
 	.row
 		div#container
@@ -67,7 +71,9 @@ block content
 				a(href='/archive/') Archived 
 				| or 
 				a(href='/tagindex/') Tagged 
-				| posts.
+				| posts. For a more standard 'blog' view, check out the recent posts in 
+				a(href='/chrono/') Chronological 
+				| order.
 
 	script	
 		var $container = $('#container');
@@ -78,6 +84,8 @@ block content
 			});
 		});
 		$('#filters a').click(function(){
+			$('#filters dd').removeClass('active');
+			$(this).parent().addClass('active');
 			var selector = $(this).attr('data-filter');
 			$container.isotope({ filter: selector });
 			return false;

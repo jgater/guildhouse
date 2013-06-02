@@ -11,6 +11,34 @@ body {
 		max-width: 1600px;
 }
 
+
+pre {
+	max-width: 70em;
+}
+
+ul {
+		margin-left: 2.5em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #5b94bf;
+	font-weight: normal;
+}
+
+a {
+	color: #5b94bf;
+}
+
+button, .button {
+	background-color: #5b94bf;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+		background-color: #4180b6; 
+}
+
 .articlebox {
 	margin-top: 20px;
 	margin-left: 15px;
@@ -50,31 +78,15 @@ body {
 	margin-bottom: 5px;
 }
 
-pre {
-	max-width: 70em;
+.tagnav {
+	padding: 10px 0px 0px 10px;
+	border-style: dotted;
+	border-width: 0 1px 1px 1px;
+	border-color: #5b94bf;
 }
 
-ul {
-		margin-left: 2.5em;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	color: #5b94bf;
-	font-weight: normal;
-}
-
-a {
-	color: #5b94bf;
-}
-
-button, .button {
-	background-color: #5b94bf;
-}
-
-button:hover, button:focus, .button:hover, .button:focus {
-		background-color: #4180b6; 
+.sub-nav {
+	margin-bottom: 0;
 }
 
 .disabled.day {
@@ -120,6 +132,7 @@ a span.iconic {
 	position: relative;
 	top: 2px;
 }
+
 
 .taglist {
 	border-left: 1px solid #e6e6e6;

@@ -1,5 +1,4 @@
 ---
-id: metalmini
 title: Metal Minis
-template: staticindex.jade
+template: chrono.jade
 ---

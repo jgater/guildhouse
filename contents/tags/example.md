@@ -1,5 +1,4 @@
 ---
-id: example
 title: Examples
-template: staticindex.jade
+template: chrono.jade
 ---
