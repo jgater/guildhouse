@@ -8,6 +8,7 @@ It is built with
 * [Foundation 4](http://foundation.zurb.com/) (MIT)
 * [MomentJS](http://momentjs.com/) (MIT)
 * [Iconic font](http://www.somerandomdude.com/work/iconic/) (SIL open font)
+* [Isotope](http://isotope.metafizzy.co/) (MIT for non-commercial use)
 * and [Snowboot](https://github.com/ndhu/snowboot-wintersmith-templates) was inspiration for the Tags code.
 
 Copyright for the above lies with their respective authors, and are used here under their licence terms.
