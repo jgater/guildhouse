@@ -2,10 +2,11 @@
 
 This is the source code for  [The Guildhouse](http://theguildhouse.co.uk/), my personal blog.
 
-It is built with 
+It is built using
 
 * [Wintersmith](https://github.com/jnordberg/wintersmith) (MIT)
 * [Foundation 4](http://foundation.zurb.com/) (MIT)
+* [JQuery](http://jquery.com/) (MIT)
 * [MomentJS](http://momentjs.com/) (MIT)
 * [Iconic font](http://www.somerandomdude.com/work/iconic/) (SIL open font)
 * [Isotope](http://isotope.metafizzy.co/) (MIT for non-commercial use)
