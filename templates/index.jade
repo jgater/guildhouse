@@ -6,36 +6,62 @@ block append head
 block content
 	include includes/author
 	include includes/published
-	- var articles = _.chain(pubArticles).filter(function(item) {
-	-		if (page.title==="Index") {
-	-			return item
-	-		} else if (item.metadata.tags && item.metadata.tags.length > 0) {
-	-			var taglist = _.flatten(item.metadata.tags.split(','))
-	-			var tagexists = _.some(taglist, function(tag){return tag.trim() === page.metadata.id})
-	-			if (tagexists) { return item }	
-	-		}
-	-	}).sortBy(function(item) { 
+
+	mixin tag(tagName)
+		- var tag = contents.tags[tagName + '.md']
+			if tag
+				a(href='#', data-filter='[data-tags~="'+tagName+'"]')
+					span= tag.title
+			else
+				span= tagName
+
+	- var articles = _.chain(pubArticles).sortBy(function(item) { 
 	-   // sort them by date
 	-			return -item.date
 	- }).first(locals.index_articles).value() // and finally take the first few only
 
-	.row
-		div#container
-			each article in articles
-				div.articlebox
-					if article.metadata.image
-						a(href=article.url)
-							img(src=article.url+article.metadata.image, alt=article.metadata.abstract, class='right')
-					h3
-						a(href=article.url)= article.title  
-					!= article.intro
-					if article.hasMore
-						p
-							a(href=article.url).button.round.small read more &rarr;
-
+	- var tagList = _.chain(articles).filter(function(item) {
+	-   return (item.metadata.tags && item.metadata.tags.length > 0)
+	- }).map(function(item){ 
+	-		return item.metadata.tags.split(',')
+	-	}).flatten().map(function(item){
+	-		return item.trim()
+	-	}).union().value()
 
 	.row
 		.large-12.columns
+			ul#filters.no-bullet
+				li 
+					a(href='#', data-filter='*') show all
+				each tagName in tagList	
+					li
+						mixin tag(tagName)
+
+	.row
+		div#container
+			each article in articles
+				-	if (article.metadata.tags && article.metadata.tags.length > 0) { 
+				-	var articleTags = ""
+				-		_.each(article.metadata.tags.split(','), function(item) {
+				-			articleTags += item.trim()+" "
+				-		})
+				- }
+
+				div.articlebox(data-tags=articleTags)
+					a(href=article.url)
+						div.title= article.title  
+					div.content
+						if article.metadata.image
+							a(href=article.url)
+								img.titleimg(src=article.url+article.metadata.image, alt=article.metadata.abstract, class='left')
+						!= article.intro
+					if article.hasMore
+						a(href=article.url)
+							div.more read more &rarr;
+	
+	.row
+		.large-12.columns
+			hr
 			p 
 				| To see older articles, check out 
 				a(href='/archive/') Archived 
@@ -44,10 +70,15 @@ block content
 				| posts.
 
 	script	
+		var $container = $('#container');
 		$(window).load(function(){
-			var $container = $('#container');
 			$container.isotope({
 				layoutMode: 'masonry',
 				itemSelector: '.articlebox'
 			});
+		});
+		$('#filters a').click(function(){
+			var selector = $(this).attr('data-filter');
+			$container.isotope({ filter: selector });
+			return false;
 		});

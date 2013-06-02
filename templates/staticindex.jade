@@ -37,10 +37,10 @@ block content
 
 					.row
 						if article.metadata.image
-							.large-3.columns
+							.large-2.columns
 								a(href=article.url)
 									img(src=article.url+article.metadata.image, alt=article.metadata.abstract)
-							.large-9.columns          
+							.large-10.columns          
 								section.content
 									!= article.intro
 									if article.hasMore
@@ -60,7 +60,7 @@ block content
 
 					
 		.large-2.columns
-			include includes/sidebar
+			include includes/staticsidebar
 
 	.row
 		.large-12.columns

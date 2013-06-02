@@ -1,5 +1,5 @@
 ---
 id: code
 title: Code
-template: index.jade
+template: staticindex.jade
 ---

@@ -1,5 +1,5 @@
 ---
 id: example
 title: Examples
-template: index.jade
+template: staticindex.jade
 ---

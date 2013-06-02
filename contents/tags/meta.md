@@ -1,5 +1,5 @@
 ---
 id: meta
 title: Meta
-template: index.jade
+template: staticindex.jade
 ---

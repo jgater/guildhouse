@@ -1,5 +1,5 @@
 ---
 id: paint
 title: Paint
-template: index.jade
+template: staticindex.jade
 ---

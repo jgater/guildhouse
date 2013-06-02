@@ -1,5 +1,5 @@
 ---
 id: clever
 title: Clever
-template: index.jade
+template: staticindex.jade
 ---

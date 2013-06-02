@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1em;
+	line-height: 1em;
 }
 
 .row {
@@ -11,10 +12,42 @@ body {
 }
 
 .articlebox {
-	border: 1px dotted #5b94bf;
-	padding: 10px;
-	margin: 10px;
+	margin-top: 20px;
+	margin-left: 15px;
 	max-width: 512px;
+}
+
+.articlebox .title {
+	background-color: #5b94bf;
+	padding: 5px;
+	color: white;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.articlebox .more {
+	background-color: #eee;
+	padding: 5px;
+	color: #5b94bf;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	border-style: dotted;
+	border-width: 0 1px 1px 1px;
+	border-color: #5b94bf;
+}
+
+.articlebox .content {
+	padding: 10px;
+	border-style: dotted;
+	border-width: 0 1px 1px 1px;
+	border-color: #5b94bf;
+}
+
+.articlebox .content .titleimg {
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
 
 pre {
