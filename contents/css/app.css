@@ -42,7 +42,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .articlebox {
 	margin-top: 20px;
 	margin-left: 15px;
-	max-width: 512px;
+	width: 512px;
 }
 
 .articlebox .title {
