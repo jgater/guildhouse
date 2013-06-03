@@ -12,7 +12,7 @@
 		};
 
 		var replaceDates = function() {
-			$("div.date").each(function(){
+			$("span#date").each(function(){
 				var date = $(this).text();
 				var day = moment(date);
 				if (day.isValid()) {

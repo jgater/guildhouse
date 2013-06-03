@@ -17,21 +17,21 @@ block content
 		.large-12.columns
 			p
 			a.back(href='/').button.round.small &larr; back to index
-			br
-			br
-			.row
-				.small-6.large-9.columns
-					h2= page.title
-				.small-6.large-3.columns
-					.date.right= page.rfc822date
-					
-		
-			article.single.post
-				section.content
+	.row
+		.large-12.columns
+			div.single-articlebox
+				div.toptitle
+					span= page.title
+					span#date.right= page.rfc822date
+				div.content
+					if page.metadata.image
+						img.titleimg.left(src=page.url+page.metadata.image, alt=page.metadata.abstract)
 					!= page.html
-				br
-				p
-					| [contact author: 
-					mixin author(page.metadata.author) ]
-				p
-					a.back(href='/').button.round.small &larr; back to index
+					p
+						| [contact author: 
+						mixin author(page.metadata.author) ]
+					p
+	.row
+		.large-12.columns
+			p
+			a.back(href='/').button.round.small &larr; back to index

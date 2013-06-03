@@ -11,15 +11,9 @@ body {
 		max-width: 1600px;
 }
 
-
-pre {
-	max-width: 70em;
-}
-
 ul {
 		margin-left: 2.5em;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -31,7 +25,7 @@ a {
 	color: #5b94bf;
 }
 
-button, .button {
+#filters dd.active a, button, .button {
 	background-color: #5b94bf;
 }
 
@@ -45,7 +39,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 	max-width: 512px;
 }
 
-.articlebox .title {
+div.articlebox div.toptitle, div.single-articlebox div.toptitle {
 	background-color: #5b94bf;
 	padding: 5px;
 	color: white;
@@ -54,7 +48,20 @@ button:hover, button:focus, .button:hover, .button:focus {
 	line-height: 1.5em;
 }
 
-.articlebox .more {
+
+div.articlebox div.content, div.single-articlebox div.content {
+	padding: 10px;
+	border-style: dotted;
+	border-width: 0 1px 1px 1px;
+	border-color: #5b94bf;
+}
+
+div.content .titleimg {
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+div.articlebox div.more {
 	background-color: #eee;
 	padding: 5px;
 	color: #5b94bf;
@@ -64,18 +71,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	border-style: dotted;
 	border-width: 0 1px 1px 1px;
 	border-color: #5b94bf;
-}
-
-.articlebox .content {
-	padding: 10px;
-	border-style: dotted;
-	border-width: 0 1px 1px 1px;
-	border-color: #5b94bf;
-}
-
-.articlebox .content .titleimg {
-	margin-right: 10px;
-	margin-bottom: 5px;
 }
 
 .tagnav {
@@ -103,9 +98,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 .top-bar, .top-bar-section, .expanded .title-area {
 	margin: 0;
 	padding: 0;
-}
-
-.top-bar-section ul li > a {
 }
 
 #large-logo{
@@ -148,11 +140,9 @@ a span.iconic {
 	font-size: 1.3em;
 }
 
-.date {
-	padding-top: 1em;
-	padding-bottom: 0.5em;
+#date {
+	padding-right: 1em;
 	font-style: italic;
-	color: #999;
 }
 
 .datebar {
