@@ -59,6 +59,7 @@ div.articlebox div.content, div.single-articlebox div.content {
 div.content .titleimg {
 	margin-right: 10px;
 	margin-bottom: 5px;
+	float: left;
 }
 
 div.articlebox div.more {

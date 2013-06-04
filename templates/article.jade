@@ -25,7 +25,7 @@ block content
 					span#date.right= page.rfc822date
 				div.content
 					if page.metadata.image
-						img.titleimg.left(src=page.url+page.metadata.image, alt=page.metadata.abstract)
+						img.titleimg(src=page.url+page.metadata.image, alt=page.metadata.abstract)
 					!= page.html
 					p
 						| [contact author: 

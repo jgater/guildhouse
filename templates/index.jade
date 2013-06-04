@@ -57,7 +57,7 @@ block content
 					div.content
 						if article.metadata.image
 							a(href=article.url)
-								img.titleimg(src=article.url+article.metadata.image, alt=article.metadata.abstract, class='left')
+								img.titleimg(src=article.url+article.metadata.image, alt=article.metadata.abstract)
 						!= article.intro
 					if article.hasMore
 						a(href=article.url)
