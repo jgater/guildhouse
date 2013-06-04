@@ -6,7 +6,7 @@ date: 2013-05-15 23:30
 template: article.jade
 status: published
 tags: metalmini, paint
-image: IMAG0035.jpg
+image: 23.jpg
 ---
 
 
