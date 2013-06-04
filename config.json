@@ -5,6 +5,24 @@
 		"owner": "James Gater",
 		"description": "Code, metal and paint",
 		"index_articles": 30,
+		"plugins": [
+    	"./plugins/paginator.coffee"
+  	],
+  	"require": {
+    	"moment": "moment",
+    	"_": "underscore",
+    	"typogr": "typogr"
+  	},
+  	"jade": {
+    	"pretty": true
+  	},
+  	"markdown": {
+    	"smartLists": true,
+    	"smartypants": true
+  	},
+  	"paginator": {
+    	"perPage": 3
+  	},
 		"nav" : [
 						 {
 								"name": "Home",
