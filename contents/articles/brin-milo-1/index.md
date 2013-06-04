@@ -8,10 +8,9 @@ status: published
 tags: metalmini, paint, milo
 image: milo.jpg
 ---
+[Part 1](../brin-milo-1/) | [Part 2](../brin-milo-2/) |  [Part 3](../brin-milo-3/)
 
 My friends and I have taken on a joint challenge for May - each of five of us is painting a Games Workshop 28mm miniature, a Gaunt's Ghost of Dan Abnett's books. My randomly assigned figure was Brin Milo. My personal rule was to try and stay source appropriate. Given I've now got about 5 days left to finish it and still call it a May challenge, I figured I should get on with it! On the up side, it's a 3 day bank holiday weekend. On the <strike>down side</strike> 2nd up side, my mother-in-law is coming to stay with us from France on Sunday, and we're all meeting up for tea on Monday, so finding painting time might be tricky. But onwards and downwards, I say!
-
-[Part 1](../brin-milo-1/) | [Part 2](../brin-milo-2/)
 
 <span class="more"></span>
 

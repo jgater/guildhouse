@@ -7,9 +7,9 @@ template: article.jade
 status: published
 tags: metalmini, paint, milo
 ---
-My friends and I have taken on a joint challenge for May - each of five of us is painting a Games Workshop 28mm miniature, a Gaunt's Ghost of Dan Abnett's books. My randomly assigned figure was Brin Milo.
+[Part 1](../brin-milo-1/) | [Part 2](../brin-milo-2/) |  [Part 3](../brin-milo-3/)
 
-[Part 1](../brin-milo-1/) | [Part 2](../brin-milo-2/)
+My friends and I have taken on a joint challenge for May - each of five of us is painting a Games Workshop 28mm miniature, a Gaunt's Ghost of Dan Abnett's books. My randomly assigned figure was Brin Milo.
 
 <span class="more"></span>
 
