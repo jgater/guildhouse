@@ -1,23 +1,26 @@
 {
-	"locals": {
-		"url": "http://theguildhouse.co.uk",
-		"title": "the Guildhouse",
-		"owner": "James Gater",
-		"description": "Code, metal and paint",
-		"index_articles": 30,
-  	"require": {
-    	"moment": "moment",
-    	"_": "underscore",
-    	"typogr": "typogr"
-  	},
-  	"jade": {
-    	"pretty": true
-  	},
-  	"markdown": {
-    	"smartLists": true,
-    	"smartypants": true
-  	},
-		"nav" : [
+  "locals": {
+    "url": "http://theguildhouse.co.uk",
+    "name": "The Guildhouse",
+    "owner": "James Gater",
+    "description": "Code, Metal and paint"
+  },
+  "plugins": [
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "index_articles": 30,
+  		"nav" : [
 						 {
 								"name": "Home",
 								"icon": "home",
@@ -62,5 +65,5 @@
 							}
 
 				]  
-	}
 }
+
