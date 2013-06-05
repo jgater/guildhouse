@@ -16,10 +16,7 @@ block content
 			else
 				span= tagName
 
-	- var articles = _.chain(pubArticles).sortBy(function(item) { 
-	-   // sort them by date
-	-			return -item.date
-	- }).first(locals.index_articles).value() // and finally take the first few only
+	- var articles = _.first(pubArticles,locals.index_articles)
 
 	- var tagList = _.chain(articles).filter(function(item) {
 	-   return (item.metadata.tags && item.metadata.tags.length > 0)
@@ -51,7 +48,7 @@ block content
 				-		})
 				- }
 
-				div.articlebox(data-tags=articleTags)
+				div.articlebox.narrow(data-tags=articleTags)
 					a(href=article.url)
 						div.toptitle= article.title  
 					div.content

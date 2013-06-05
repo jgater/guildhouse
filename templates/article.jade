@@ -17,20 +17,23 @@ block content
 		.large-12.columns
 			p
 			a.back(href='/').button.round.small &larr; back to index
+
 	.row
 		.large-12.columns
-			div.single-articlebox
+			div.articlebox
 				div.toptitle
 					span= page.title
 					span#date.right= page.rfc822date
 				div.content
-					if page.metadata.image
-						img.titleimg(src=page.url+page.metadata.image, alt=page.metadata.abstract)
-					!= page.html
+					.row
+						.large-12.columns          
+							section.content
+								!= page.html
 					p
 						| [contact author: 
 						mixin author(page.metadata.author) ]
 					p
+
 	.row
 		.large-12.columns
 			p

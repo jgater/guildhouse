@@ -5,4 +5,7 @@
 - }).compact().filter(function(item) { // compact removes any directories w/o an index
 -		// limits to only published articles	
 -   return (item.metadata.status === "published")
+- }).sortBy(function(item) { 
+-   // sort them by date
+-		return -item.date
 - }).value()

@@ -1,68 +1,41 @@
 extends layout
 
 block append head
-
 block content
 	include includes/author
 	include includes/published
-	.row
-		.large-10.columns
 
-			- var articles = _.chain(pubArticles).filter(function(item) {
-			-		if (page.title==="Index") {
-			-			return item
-			-		} else if (item.metadata.tags && item.metadata.tags.length > 0) {
-			-			var taglist = _.flatten(item.metadata.tags.split(','))
-			-			// shorten a filename of the format "tags/tagname.md" to "tagname"
-			-			var id = page._filename.slice(5,-3)
-			-			var tagexists = _.some(taglist, function(tag){return tag.trim() === id})
-			-			if (tagexists) { return item }	
-			-		}
-			-	}).sortBy(function(item) { 
-			-   // sort them by date
-			-			return -item.date
-			- }).first(locals.index_articles).value() // and finally take the first few only
+			- var articles = _.first(pubArticles,locals.index_articles) // take the first few only
 			- var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
 
-			each article in articles
-				article.post
-					.row
-						.small-6.columns
-							h2
-								a(href=article.url)= article.title
-						.small-6.columns
-							.button-bar.right
-								ul.button-group.round.datebar
-									li.tiny.button.disabled.day= article.date.getDate()
-									li.tiny.button.disabled.month= month[article.date.getMonth()]
-									li.tiny.button.disabled.secondary= article.date.getFullYear()
 
-					.row
+	each article in articles
+		.row
+			.large-12.columns
+				div.articlebox.wide
+					a(href=article.url)
+						div.toptitle= article.title  
+					div.content
 						if article.metadata.image
-							.large-2.columns
-								a(href=article.url)
-									img(src=article.url+article.metadata.image, alt=article.metadata.abstract)
-							.large-10.columns         
-								section.content
+							.row
+								.large-2.columns
+									a(href=article.url)
+										img(src=article.url+article.metadata.image, alt=article.metadata.abstract)
+								.large-10.columns         
 									!= article.intro
-									if article.hasMore
-										p
-											a(href=article.url).button.round.small read more &rarr;
 						else
-							.large-12.columns          
-								section.content
-									!= article.intro
-									if article.hasMore
-										p
-											a(href=article.url).button.round.small read more &rarr;
+							.row
+								.large-12.columns          
+									section.content
+										!= article.intro
+					if article.hasMore
+						a(href=article.url)
+							div.more read more &rarr;
+		
 
-					.row
-						.large-12.columns
-							hr
-
-					
-		.large-2.columns
-			include includes/staticsidebar
+	.row
+		.large-12.columns
+			hr
 
 	.row
 		.large-12.columns
