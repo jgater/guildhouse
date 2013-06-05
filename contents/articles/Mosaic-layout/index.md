@@ -23,13 +23,13 @@ Now, given this is (partly) a coding blog, onto how the code actually works.
 OK, the basic setup of Isotope is actually pretty straightforward. 
 
 
-```
+```xml
 <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 <script src="/js/jquery.isotope.min.js"></script>
 ```
 Obviously, I first need to add jquery and my local copy of the isotope library itself. 
 
-```
+```xml
 <script>
 	var $container = $('#container');
 	$(window).load(function(){
@@ -60,7 +60,7 @@ Obviously, I first need to add jquery and my local copy of the isotope library i
 Isotope needs an overall section to work on, and be told what sub elements are the 'blocks' that can be shuffled around; both are standard jquery element selectors - in this case, I just used a basic section to act as the overall container (that stretches the width of my main content area), and used my 'articlebox' class on individual articles that can be shuffled around as the window resizes. That's also a convenient class to hang my various bits of CSS on to apply borders and style the article summary text.
 
 The most important part of the script, for me, was this:
-```
+```javascript
 $(window).load(function(){
 ...
 })
@@ -68,7 +68,7 @@ $(window).load(function(){
 
 This means that the isotope changes don't happen until after *all* the images and fonts are loaded; using my usual 
 
-```
+```javascript
 document.onload = function(){ 
 ...
 }
@@ -78,7 +78,7 @@ or jquery's 'ready' event meant that isotope started work as soon as the DOM was
 
 I also have a bunch of necessary CSS:
 
-```
+```css
 .articlebox {
 	margin: 20px;
 	width: 512px;
@@ -140,7 +140,7 @@ The isotope specific CSS allows for much more efficient CSS3 transforms to do al
 
 You can specify the 'masonry' column width when isotope is initialized; for example I could replace the code above with
 
-```
+```xml
 <script>
 	var $container = $('#container');
 	$(window).load(function(){

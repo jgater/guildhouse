@@ -22,13 +22,14 @@ block content
 		.large-12.columns
 			div.articlebox
 				div.toptitle
-					span= page.title
+					span
+						!{ typogr.typogrify(page.title) }
 					span#date.right= page.rfc822date
 				div.content
 					.row
 						.large-12.columns          
 							section.content
-								!= page.html
+								!{ typogr.typogrify(page.html) }
 					p
 						| [contact author: 
 						mixin author(page.metadata.author) ]

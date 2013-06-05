@@ -15,7 +15,8 @@ block content
 				div.articlebox.wide
 					a(href=article.url)
 						div.toptitle
-							span= article.title
+							span
+								!{ typogr.typogrify(article.title) }
 							span.button-bar.right
 								ul.button-group.round
 									li.tiny.button.disabled.day= article.date.getDate()
@@ -28,12 +29,11 @@ block content
 									a(href=article.url)
 										img(src=article.url+article.metadata.image, alt=article.metadata.abstract)
 								.large-10.columns         
-									!= article.intro
+									!{ typogr(article.intro).typogrify() }
 						else
 							.row
 								.large-12.columns          
-									section.content
-										!= article.intro
+									!{ typogr(article.intro).typogrify() }
 					if article.hasMore
 						a(href=article.url)
 							div.more read more &rarr;

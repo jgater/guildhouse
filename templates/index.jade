@@ -50,12 +50,13 @@ block content
 
 				div.articlebox.narrow(data-tags=articleTags)
 					a(href=article.url)
-						div.toptitle= article.title  
+						div.toptitle
+							!{ typogr.typogrify(article.title) }
 					div.content
 						if article.metadata.image
 							a(href=article.url)
 								img.titleimg(src=article.url+article.metadata.image, alt=article.metadata.abstract)
-						!= article.intro
+						!{ typogr(article.intro).typogrify() }
 					if article.hasMore
 						a(href=article.url)
 							div.more read more &rarr;
