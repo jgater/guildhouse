@@ -4,7 +4,7 @@ abstract: Code syntax testing
 author: jg
 date: 2013-05-05 15:00
 template: article.jade
-status: published
+status: notpublished
 tags: code
 ---
 

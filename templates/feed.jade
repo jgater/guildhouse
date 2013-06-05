@@ -7,7 +7,7 @@ rss(version='2.0',
   channel
     include includes/published 
     - var articles = _.chain(pubArticles).sortBy(function(item) { return -item.date }).value();
-    title= locals.title
+    title= locals.name
     atom:link(href=locals.url + '/feed.xml', rel='self', type='application/rss+xml')
     link= locals.url
     description= locals.description
