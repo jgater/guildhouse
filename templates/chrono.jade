@@ -14,7 +14,13 @@ block content
 			.large-12.columns
 				div.articlebox.wide
 					a(href=article.url)
-						div.toptitle= article.title  
+						div.toptitle
+							span= article.title
+							span.button-bar.right
+								ul.button-group.round
+									li.tiny.button.disabled.day= article.date.getDate()
+									li.tiny.button.disabled.month= month[article.date.getMonth()]
+									li.tiny.button.disabled.year= article.date.getFullYear()  
 					div.content
 						if article.metadata.image
 							.row
