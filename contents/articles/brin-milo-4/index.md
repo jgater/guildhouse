@@ -23,13 +23,13 @@ My friends and I have taken on a joint challenge for May (now finishing ASAP!) -
 	<li>![](3.jpg)
 		<blockquote></blockquote>
 	</li>
-</ul>
-
-<ul class="small-block-grid-1 large-block-grid-4">
-	<li>![](4.jpg)
+	<li>![](5.jpg)
 		<blockquote></blockquote>
 	</li>
-	<li>![](5.jpg)
+</ul>
+
+<ul class="small-block-grid-1 large-block-grid-2">
+	<li>![](4.jpg)
 		<blockquote></blockquote>
 	</li>
 </ul>
