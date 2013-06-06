@@ -18,7 +18,7 @@ block content
 
 	- var articles = _.first(pubArticles,locals.index_articles)
 
-	- var tagList = _.chain(articles).filter(function(item) {
+	- var tagList = _.chain(pubArticles).filter(function(item) {
 	-   return (item.metadata.tags && item.metadata.tags.length > 0)
 	- }).map(function(item){ 
 	-		return item.metadata.tags.split(',')
@@ -29,8 +29,12 @@ block content
 	.row
 		div.tagnav
 			dl.sub-nav#filters
-				dt Show Recent posts:
+				dt Show:
 				dd.active
+					a(href='', data-filter='[data-recent="true"]') 
+						span Recent
+				dd
+					span | 
 					a(href='', data-filter='*') 
 						span All
 				each tagName in tagList	
@@ -48,7 +52,7 @@ block content
 				-		})
 				- }
 
-				div.articlebox.narrow(data-tags=articleTags)
+				div.articlebox.narrow(data-tags=articleTags, data-recent="true")
 					a(href=article.url)
 						div.toptitle
 							!{ typogr.typogrify(article.title) }
@@ -75,16 +79,34 @@ block content
 
 	script.
 		var $container = $('#container');
+		var allLoaded = false;
 		$(window).load(function(){
 			$container.isotope({
 				layoutMode: 'masonry',
-				itemSelector: '.articlebox'
+				itemSelector: '.articlebox',
+				transformsEnabled: true
 			});
 		});
+
 		$('#filters a').click(function(){
 			$('#filters dd').removeClass('active');
 			$(this).parent().addClass('active');
 			var selector = $(this).attr('data-filter');
 			$container.isotope({ filter: selector });
+			if (!allLoaded) {
+				$('body').append('<div id="temp-load"</div>');
+				$('#temp-load').load('/remaining.html #content', function(){
+					$('#temp-load > #content').children().css({ opacity: 0 });
+					var toAdd = $('#temp-load > #content').html();
+					$container.isotope('insert', $(toAdd), function(){
+						$('#temp-load').remove();
+						allLoaded = true;
+						$container.children().css({ opacity: 1 });
+						$container.imagesLoaded(function(){
+							$container.isotope('reLayout');
+						});
+					});
+				});
+			}
 			return false;
 		});
