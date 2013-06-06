@@ -58,6 +58,7 @@ block content
 							!{ typogr.typogrify(article.title) }
 					div.content
 						if article.metadata.image
+							//- var path = article.filepath.full.substring(0, article.filepath.full.lastIndexOf("/")) + "/" + article.metadata.image
 							a(href=article.url)
 								img.titleimg(src=article.url+article.metadata.image, alt=article.metadata.abstract)
 						!{ typogr(article.intro).typogrify() }
