@@ -15,19 +15,25 @@ block content
 	- }).value()
 	- var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-	.row
-		.large-12.columns
-				ul
-					each year in _.chain(archive).keys().reverse().value()
-						h3.year= year
-						- var months = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
+	section.archive
+		.row
+			.small-12.columns
+				h2 Posts Archive
+		each year in _.chain(archive).keys().reverse().value()
+			.row.year-list
+				.small-1.columns
+					h2=year
+			- var months = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
+			each articles, month in months
+				.row.month-list
+					.large-1.small-4.small-offset-1.columns
+						h3= month
+					.large-10.small-7.columns.article-list
 						ul.no-bullet
-							each articles, month in months
+							each article in articles
 								li
-									strong= month
-										ul.no-bullet
-											each article in articles
-												li
-													a(href=article.url)= article.title
-													p= article.metadata.abstract
-	
+									a(href=article.url)= article.title
+									p= article.metadata.abstract
+
+			
+		

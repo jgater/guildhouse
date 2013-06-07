@@ -138,6 +138,7 @@ a span.iconic {
 	font-style: italic;
 }
 
+/**** Tag index ****/
 
 .tagindex {
 	margin: 1em 0em 7em;
@@ -165,6 +166,23 @@ a span.iconic {
 .tagindex > ul.tagindex > li.tag > a {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1.6em;
+}
+
+/**** Archives ****/
+
+.archive .year-list {
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		background-color: #f6f6f6;
+}
+
+.archive .month-list{
+		margin-bottom: 40px;
+}
+
+.archive .article-list{
+		border-left: 1px solid #e6e6e6;
+		padding-top: 15px;
 }
 
 /**** Isotope Filtering ****/
