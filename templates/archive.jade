@@ -6,7 +6,6 @@ block prepend title
 
 block content
 	include includes/published
-	!= page.html
 		//- underscore helps us filter and sort our articles
 	- var archive = _.chain(pubArticles).sortBy(function(item) {
 	-   return -item.date
@@ -16,9 +15,6 @@ block content
 	- var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 	section.archive
-		.row
-			.small-12.columns
-				h2 Posts Archive
 		each year in _.chain(archive).keys().reverse().value()
 			.row.year-list
 				.small-1.columns
