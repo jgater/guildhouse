@@ -1,4 +1,4 @@
 ---
 title: Clever
-template: chrono.jade
+template: tags.jade
 ---

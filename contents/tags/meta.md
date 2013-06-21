@@ -1,4 +1,4 @@
 ---
 title: Meta
-template: chrono.jade
+template: tags.jade
 ---

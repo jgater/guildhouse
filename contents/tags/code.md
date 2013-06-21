@@ -1,4 +1,4 @@
 ---
 title: Code
-template: chrono.jade
+template: tags.jade
 ---

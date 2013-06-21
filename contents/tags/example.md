@@ -1,4 +1,4 @@
 ---
 title: Examples
-template: chrono.jade
+template: tags.jade
 ---

@@ -1,4 +1,4 @@
 ---
 title: Paint
-template: chrono.jade
+template: tags.jade
 ---

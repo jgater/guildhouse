@@ -1,4 +1,4 @@
 ---
 title: Brin Milo
-template: chrono.jade
+template: tags.jade
 ---

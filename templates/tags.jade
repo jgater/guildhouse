@@ -1,0 +1,25 @@
+
+include includes/published
+
+section#content
+	- pubArticles.splice(0,locals.index_articles)
+
+	each article in pubArticles
+		-	if (article.metadata.tags && article.metadata.tags.length > 0) { 
+		-	var articleTags = ""
+		-		_.each(article.metadata.tags.split(','), function(item) {
+		-			articleTags += item.trim()+" "
+		-		})
+		- }
+		div.articlebox.narrow(data-tags=articleTags)
+			a(href=article.url)
+				div.toptitle
+					!{ typogr.typogrify(article.title) }
+			div.content
+				if article.metadata.image
+					a(href=article.url)
+						img.titleimg(src=article.url+article.metadata.image, alt=article.metadata.abstract)
+				!{ typogr(article.intro).typogrify() }
+			if article.hasMore
+				a(href=article.url)
+					div.more read more &rarr;

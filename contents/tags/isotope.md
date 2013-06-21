@@ -1,4 +1,4 @@
 ---
 title: Isotope JS
-template: chrono.jade
+template: tags.jade
 ---

@@ -1,4 +1,4 @@
 ---
 title: Metal Minis
-template: chrono.jade
+template: tags.jade
 ---
